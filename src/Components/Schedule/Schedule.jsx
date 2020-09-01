@@ -1,11 +1,24 @@
 import React, { Component } from 'react';
-import clsx from 'clsx';
-import { withStyles, useTheme } from "@material-ui/core/styles";
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
+import { withStyles, useTheme, createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
+import blue from '@material-ui/core/colors/blue';
 import './Schedule.css';
+
+const theme = createMuiTheme({
+    palette: {
+        primary: blue,
+    },
+    typography: {
+        // Use the system font instead of the default Roboto font.
+        "fontFamily": [
+          'Courier New',
+          'Courier', 
+          'monospace'
+        ].join(','),
+        "fontSize": 15
+    }
+});
+
 
 const styles = () => ({
   root: {
@@ -65,20 +78,22 @@ class Schedule extends Component {
     render() {
         const { classes } = this.props;
         return (
-            <div>
-                <div className="dayBound roundedBox">
-                    {this.dayElem("1", "October 23, 2020")}
-                    {this.eventElem("11:00", "Event Name", "Link")}
+            <ThemeProvider theme={theme}>
+                <div>
+                    <div className="dayBound roundedBox">
+                        {this.dayElem("1", "October 23, 2020")}
+                        {this.eventElem("11:00", "Event Name", "Link")}
+                    </div>
+                    <div className="dayBound roundedBox">
+                        {this.dayElem("2", "October 24, 2020")}
+                        {this.eventElem("11:00", "Event Name", "Link")}
+                    </div>
+                    <div className="dayBound roundedBox">
+                        {this.dayElem("3", "October 25, 2020")}
+                        {this.eventElem("11:00", "Event Name", "Link")}
+                    </div>
                 </div>
-                <div className="dayBound roundedBox">
-                    {this.dayElem("2", "October 24, 2020")}
-                    {this.eventElem("11:00", "Event Name", "Link")}
-                </div>
-                <div className="dayBound roundedBox">
-                    {this.dayElem("3", "October 25, 2020")}
-                    {this.eventElem("11:00", "Event Name", "Link")}
-                </div>
-            </div>
+            </ThemeProvider>
         )
     }
 }

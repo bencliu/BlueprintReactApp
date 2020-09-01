@@ -16,6 +16,7 @@ import Schedule from './Components/Schedule/Schedule';
 import Resources from './Components/Resources/Resources';
 import Contact from './Components/Contact/Contact';
 import Image from './Components/starImage.jpeg';
+import About from './Components/About/About';
 
 //Custom Material UI Styles
 const useStyles = makeStyles((theme) => ({
@@ -70,7 +71,7 @@ function App() {
               {
                 <Route exact path="/about"
                      render={() =>
-                      <div> About </div>}
+                      <About/>}
                    />
               }
               {

@@ -1,14 +1,28 @@
 import React from 'react';
-import GoogleDocsViewer from '../GoogleView';
+import './Resources.css';
+
 
 function Resources() {
     return (
-        <div>
-            <GoogleDocsViewer
-                width="600px"
-                height="780px"
-                fileUrl="https://docs.google.com/document/d/1b7lytJI1vdMpMsxUHwoWe29BgnGLWwtohut6jWUlOwE/edit?usp=sharing"
-            />
+        <div className="resContainer">
+            <div className="resElem">
+                <h1 class="restHeader"> Resource Guide </h1>
+            </div>
+            <div className="resElem">
+                <h1 class="restHeader"> Case Structure </h1>
+            </div>
+            <div className="resElem">
+                <h1 class="restHeader"> Case Documents </h1>
+            </div>
+            <div className="resElem">
+                <h1 class="restHeader"> Case Data Instructions </h1>
+            </div>
+            <div className="resElem">
+                <h1 class="restHeader"> Submission Instructions </h1>
+            </div>
+            <div className="resElem">
+                <h1 class="restHeader"> Frequently Asked Questions </h1>
+            </div>
         </div>
     )
 }
