@@ -17,10 +17,13 @@
 
 .dayBox {
     background: aquamarine;
+    color: black;
 }
 
 .eventBox {
     background: lightskyblue;
+    margin-left: 10px;
+    color: black;
 }
 
 .dayBound {

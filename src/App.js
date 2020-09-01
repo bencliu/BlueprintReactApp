@@ -8,10 +8,14 @@ import {
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
+import StarfieldAnimation from 'react-starfield-animation';
 
 //Import necessary components
 import Topbar from './Components/Topbar/Topbar';
 import Schedule from './Components/Schedule/Schedule';
+import Resources from './Components/Resources/Resources';
+import Contact from './Components/Contact/Contact';
+import Image from './Components/starImage.jpeg';
 
 //Custom Material UI Styles
 const useStyles = makeStyles((theme) => ({
@@ -21,7 +25,8 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: 100,
     paddingTop: 50,
     paddingBottom: 100,
-    height: '100vh'
+    height: '100%',
+    backgroundImage: `url(${Image})`
   },
   paperTop: {
     padding: theme.spacing(2),
@@ -38,6 +43,13 @@ function App() {
 
   return (
     <HashRouter>
+    <StarfieldAnimation
+        style={{
+          position: 'absolute',
+          width: '100%',
+          height: '100%'
+        }}
+      />
     <div className={classes.root}>
       <Grid container spacing={3} alignItems="stretch">
         <Grid item xs={12}>
@@ -64,7 +76,7 @@ function App() {
               {
                 <Route exact path="/resources"
                      render={() =>
-                      <div> resources </div>}
+                      <Resources/>}
                    />
               }
               {
@@ -76,7 +88,7 @@ function App() {
               {
                 <Route exact path="/contact"
                      render={() =>
-                      <div> contact </div>}
+                      <Contact/>}
                    />
               }
             </Switch>
