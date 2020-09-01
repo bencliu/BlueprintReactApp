@@ -1,2 +1,43 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 
+.grid-container {
+    display: block;
+    border-radius: 20px;
+    padding: 10px;
+    width: 95%;
+    margin: 5px;
+    margin-bottom: 15px;
+    background: rgb(5, 175, 175);
+    color: black;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.announce-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: aliceblue;
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 93%;
+    border: 2px solid rgb(54, 95, 122);
+    border-radius: 20px;
+}
+
+.horiz-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.announce-header {
+    display: block;
+    flex-grow: 1;
+    color: red;
+}
+
+.announce-content {
+
+}

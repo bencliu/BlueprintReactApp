@@ -17,6 +17,7 @@ import Resources from './Components/Resources/Resources';
 import Contact from './Components/Contact/Contact';
 import Image from './Components/starImage.jpeg';
 import About from './Components/About/About';
+import Questions from './Components/Questions/Questions';
 
 //Custom Material UI Styles
 const useStyles = makeStyles((theme) => ({

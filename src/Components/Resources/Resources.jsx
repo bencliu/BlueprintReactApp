@@ -3,25 +3,11 @@ import { Typography } from '@material-ui/core';
 import { ThemeProvider } from "@material-ui/core/styles";
 import './Resources.css';
 import SmallFontTheme from '../SmallFontTheme';
+import Questions from '../Questions/Questions';
 
 //Override theme
 
 class Resources extends Component {
-
-    questionElem = (question, answer) => {
-        return (
-            <ThemeProvider theme={SmallFontTheme}>
-                <div className="questionBox">
-                    <Typography component="h5" variant="h5">
-                        {question}
-                    </Typography>
-                    <Typography variant="subtitle1" color="textSecondary" align="center">
-                        {answer}
-                    </Typography>
-                </div>
-            </ThemeProvider>
-        );
-    }
 
     render() {
         return (
@@ -59,15 +45,10 @@ class Resources extends Component {
                     height="500px" width="95%">
                     </iframe>
                 </div>
-                <div className="resElem">
-                    <h2 class="restHeader"> Frequently Asked Questions </h2>
-                    {this.questionElem("What is this?", "An orange")}
-                    {this.questionElem("Where is the event?", "Virtual!")}
-                    {this.questionElem("Where can I get help?", "Submit a contact form or ping a staff member on slack!")}
-                </div>
+                <Questions/>
             </div>
         )
     }
 }
 
-export default Resources
+export default Resources;

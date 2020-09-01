@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withStyles, useTheme, createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+import { withStyles, ThemeProvider } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import blue from '@material-ui/core/colors/blue';
 import './Schedule.css';
