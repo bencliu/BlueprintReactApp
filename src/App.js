@@ -7,9 +7,11 @@ import {
   Grid, Typography, Paper
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import clsx from 'clsx';
 
 //Import necessary components
 import Topbar from './Components/Topbar/Topbar';
+import Schedule from './Components/Schedule/Schedule';
 
 //Custom Material UI Styles
 const useStyles = makeStyles((theme) => ({
@@ -45,7 +47,7 @@ function App() {
           </Paper>
         </Grid>
         <Grid item xs={12}>
-          <Paper className={classes.paperTop, classes.paperBottom}>
+          <Paper className={ clsx(classes.paperTop, classes.paperBottom) }>
             <Switch>
               {
                 <Route exact path="/"
@@ -68,7 +70,7 @@ function App() {
               {
                 <Route exact path="/schedule"
                      render={() =>
-                      <div> schedule </div>}
+                      <Schedule/>}
                    />
               }
               {
