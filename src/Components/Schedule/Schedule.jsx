@@ -3,21 +3,7 @@ import { withStyles, useTheme, createMuiTheme, ThemeProvider } from "@material-u
 import Typography from "@material-ui/core/Typography";
 import blue from '@material-ui/core/colors/blue';
 import './Schedule.css';
-
-const theme = createMuiTheme({
-    palette: {
-        primary: blue,
-    },
-    typography: {
-        // Use the system font instead of the default Roboto font.
-        "fontFamily": [
-          'Courier New',
-          'Courier', 
-          'monospace'
-        ].join(','),
-        "fontSize": 15
-    }
-});
+import Theme from "../Theme";
 
 
 const styles = () => ({
@@ -78,7 +64,7 @@ class Schedule extends Component {
     render() {
         const { classes } = this.props;
         return (
-            <ThemeProvider theme={theme}>
+            <ThemeProvider theme={Theme}>
                 <div>
                     <div className="dayBound roundedBox">
                         {this.dayElem("1", "October 23, 2020")}

@@ -5,20 +5,9 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Button from "@material-ui/core/Button";
 import { blue, cyan } from "@material-ui/core/colors";
 import { Link } from "react-router-dom";
+import Theme from "../Theme";
 
-const theme = createMuiTheme({
-    typography: {
-        // Use the system font instead of the default Roboto font.
-        "fontFamily": [
-          'Courier New',
-          'Courier', 
-          'monospace'
-        ].join(','),
-        "fontSize": 14
-    }
-});
-
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   buttonElem: {
     flexGrow: 1,
     width: '20%',
@@ -30,8 +19,8 @@ function Topbar() {
     const classes = useStyles();
 
     return (
-        <ThemeProvider theme={theme}>
-          <div className={classes.root}>
+        <ThemeProvider theme={Theme}>
+          <div>
           <AppBar position="static">
               <Toolbar>
               <Button className={classes.buttonElem} component={ Link } to= "/about">About</Button>

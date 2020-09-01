@@ -8,21 +8,7 @@ import React, { Component } from 'react'
 import { withStyles, createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import { blue, yellow } from '@material-ui/core/colors/blue';
 import './Contact.css';
-
-const theme = createMuiTheme({
-    palette: {
-        primary: yellow,
-    },
-    typography: {
-        // Use the system font instead of the default Roboto font.
-        "fontFamily": [
-          'Courier New',
-          'Courier', 
-          'monospace'
-        ].join(','),
-        "fontSize": 14
-    }
-});
+import Theme from "../Theme";
 
 const styles = () => ({
     buttonElem: {
@@ -109,7 +95,7 @@ export class Contact extends Component {
     render() {
         const { classes } = this.props;
         return (
-            <ThemeProvider theme={theme}>
+            <ThemeProvider theme={Theme}>
                 <div className="formContainer">
                 <div className="formElem">
                     <h1 class="formHeader"> Contact Us </h1>
