@@ -66,7 +66,7 @@ function App() {
               {
                 <Route exact path="/"
                      render={() =>
-                      <div> Body </div>}
+                      <About/>}
                    />
               }
               {
