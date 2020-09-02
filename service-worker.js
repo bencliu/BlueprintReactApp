@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/BlueprintReactApp/precache-manifest.0b7eef2677d49dea356708760f77d8e9.js"
+  "/BlueprintReactApp/precache-manifest.7fdb4fce8ec330992e515136764e97ec.js"
 );
 
 self.addEventListener('message', (event) => {

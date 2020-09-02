@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d8e6ad3686137b8843a4150bcdb1dff3",
+    "revision": "6650fd0e04dfd504ac7c2d2f8fa38cba",
     "url": "/BlueprintReactApp/index.html"
   },
   {
-    "revision": "4b86904dc1e81d79ada8",
+    "revision": "727925d2ff2c993d92ce",
     "url": "/BlueprintReactApp/static/css/main.f9bca317.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/BlueprintReactApp/static/js/2.c819cf08.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4b86904dc1e81d79ada8",
-    "url": "/BlueprintReactApp/static/js/main.cc4e8f73.chunk.js"
+    "revision": "727925d2ff2c993d92ce",
+    "url": "/BlueprintReactApp/static/js/main.9ceba916.chunk.js"
   },
   {
     "revision": "e3eff2f9542d1a92d89d",
