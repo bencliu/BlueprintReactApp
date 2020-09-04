@@ -9,7 +9,6 @@ import {
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import StarfieldAnimation from 'react-starfield-animation';
-import axios from 'axios';
 
 //Import necessary components
 import Topbar from './Components/Topbar/Topbar';
@@ -18,7 +17,7 @@ import Resources from './Components/Resources/Resources';
 import Contact from './Components/Contact/Contact';
 import Image from './Components/starImage.jpeg';
 import About from './Components/About/About';
-import Questions from './Components/Questions/Questions';
+import Sig from './Components/Sig/Sig';
 
 //Custom Material UI Styles
 const useStyles = makeStyles((theme) => ({
@@ -98,9 +97,7 @@ function App() {
                 <Route exact path="/sig"
                      render={() =>
                       <div>
-                        <div id='signature'>
-                          ESignature
-                        </div>
+                        <Sig/>
                       </div>}
                    />
               }
@@ -115,3 +112,5 @@ function App() {
                 
 
 export default App;
+
+

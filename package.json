@@ -10,7 +10,6 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.20.0",
     "clsx": "^1.1.1",
-    "express": "^4.17.1",
     "hellosign-embedded": "^2.9.0",
     "hellosign-sdk": "^1.6.0",
     "material-ui": "^1.0.0-beta.47",

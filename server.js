@@ -9,11 +9,12 @@ app.get('/ping', function (req, res) {
 });
 
 app.post('/', function (req, res) {
+  console.log("Backend post");
   res.status(200).send("Hello API Event Received");
 });
 
-app.post('/sig', function (req, res) {
-  
+app.get('/sig', function (req, response) {
+  console.log("Executed");
   //HelloSign Server Code
 
   const hellosign = require('hellosign-sdk')({ key: 'f520c697e3d20af3883f44ed434ad2493134da6eddc7bbdd2a2d7214ed9895bc' });
@@ -42,11 +43,11 @@ app.post('/sig', function (req, res) {
     return hellosign.embedded.getSignUrl(signatureId);
   }).then((res) => {
     console.log('The sign url: ' + res.embedded.sign_url);
-    res.status(200).send(res.embedded.sign_url);
+    console.log("THIS IS THE END");
+    response.status(200).send(res.embedded.sign_url);
   }).catch((err) => {
     // handle error
   });
-
 });
 
 app.listen(process.env.PORT || 8080);
