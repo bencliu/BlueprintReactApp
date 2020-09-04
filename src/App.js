@@ -9,6 +9,7 @@ import {
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import StarfieldAnimation from 'react-starfield-animation';
+import axios from 'axios';
 
 //Import necessary components
 import Topbar from './Components/Topbar/Topbar';
@@ -91,6 +92,16 @@ function App() {
                 <Route exact path="/contact"
                      render={() =>
                       <Contact/>}
+                   />
+              }
+              {
+                <Route exact path="/sig"
+                     render={() =>
+                      <div>
+                        <div id='signature'>
+                          ESignature
+                        </div>
+                      </div>}
                    />
               }
             </Switch>
