@@ -4,6 +4,7 @@ Instructions for Init:
 3. npm start => Click Button
 
 Other Instructions:
+1. Hosting on Heroku
 
 TODO:
 1. Document Retrieval
