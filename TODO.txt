@@ -5,6 +5,7 @@ Instructions for Init:
 
 Other Instructions:
 1. Hosting on Heroku
+2. AWS API
 
 TODO:
 1. Document Retrieval
