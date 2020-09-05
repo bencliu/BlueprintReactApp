@@ -1,0 +1,13 @@
+Instructions for Init:
+1. Start Server
+2. Establish Local Tunnel + Change API App on HelloSign
+3. npm start => Click Button
+
+Other Instructions:
+
+TODO:
+1. Document Retrieval
+2. Set up the express server on React Native
+3. Refactor code into server and front-end
+4. Medium: configure express server on react native 
+local host 3000 https://medium.com/@mariorodriguezan/react-native-fetch-request-to-http-localhost-3000-ce11a36337ca#:~:text=%3C%3D%3D%3D%20(test%20server,type%20cmd%20and%20press%20enter.
