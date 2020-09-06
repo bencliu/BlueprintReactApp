@@ -4,6 +4,7 @@ Instructions for Init:
 3. npm start => Click Button
 4. CS 230
 5. CS 221
+6. CS 109
 
 Other Instructions:
 1. Hosting on Heroku
