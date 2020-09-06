@@ -5,6 +5,7 @@ Instructions for Init:
 4. CS 230
 5. CS 221
 6. CS 109
+7. Psych 1
 
 Other Instructions:
 1. Hosting on Heroku
