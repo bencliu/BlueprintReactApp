@@ -2,6 +2,7 @@ Instructions for Init:
 1. Start Server
 2. Establish Local Tunnel + Change API App on HelloSign
 3. npm start => Click Button
+4. CS 230
 
 Other Instructions:
 1. Hosting on Heroku
