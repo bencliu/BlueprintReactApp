@@ -4,7 +4,7 @@ import SmallFontTheme from '../SmallFontTheme';
 import { Typography } from '@material-ui/core';
 import { ThemeProvider } from "@material-ui/core/styles";
 
-class faq extends Component {
+class Questions extends Component {
     questionElem = (question, answer) => {
         return (
             <ThemeProvider theme={SmallFontTheme}>
@@ -32,4 +32,4 @@ class faq extends Component {
     }
 }
 
-export default faq;
+export default Questions;
